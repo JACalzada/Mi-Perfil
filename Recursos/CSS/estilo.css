@@ -1,88 +1,89 @@
-/* Archivo: styles.css */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f9;
 }
 
-.encabezado {
-    max-width: 800px;
-    margin: 20px auto;
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #0078D7;
+    color: white;
     padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
 }
 
-header {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+.sidebar img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
     margin-bottom: 20px;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-right: 20px;
-    border: 2px solid #ddd;
-    object-fit: cover;
-}
-
-.header-text h1 {
+.sidebar h3 {
     margin: 0;
-    font-size: 2rem;
-    color: #222;
+    font-size: 1.5rem;
 }
 
-.header-text .title {
-    font-size: 1.2rem;
+.sidebar p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 1.1rem;
     color: #555;
 }
 
-.header-text .contact {
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 10px;
-}
-
-main section {
+.section {
     margin-bottom: 20px;
 }
 
-main h2 {
-    font-size: 1.5rem;
-    color: #444;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+.section h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0078D7;
+    display: inline-block;
+    color: #0078D7;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
     margin-bottom: 10px;
 }
 
-main p, main ul {
-    margin: 5px 0;
-}
-
-main ul {
-    padding-left: 20px;
-    list-style-type: disc;
-}
-
-main .job h3 {
-    font-size: 1.2rem;
-    margin: 5px 0;
-    color: #333;
-}
-
-footer {
+.footer {
     text-align: center;
-    font-size: 0.9rem;
+    margin-top: 20px;
+    font-size: 0.8rem;
     color: #777;
 }
+
